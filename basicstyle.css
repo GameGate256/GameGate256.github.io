@@ -17,6 +17,7 @@ header ul {
     display: flex;
     justify-content: center;
     margin: 30px 0 0 0;
+    flex-wrap: wrap; /* Flex items will wrap onto multiple lines */
 }
 
 header ul li {
@@ -36,8 +37,6 @@ header ul li a:not(.non-colorize):hover {
     cursor: pointer;
 }
 
-
-
 footer {
     background-color: #2d4131;
     color: white;
@@ -49,4 +48,20 @@ footer {
 footer .team-name {
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    header ul {
+        justify-content: space-around; /* Keep horizontal alignment but adjust spacing */
+    }
+
+    header ul li {
+        width: auto;
+        margin: 10px 5px; /* Add margin for spacing */
+    }
+
+    .content {
+        padding: 0 20px;
+    }
 }

@@ -5,18 +5,15 @@
 }
 
 .content img {
-    border-radius: 20px;
+    /* 둥글게 */
+    border-radius: 20px
 }
 
 .content-paragraph {
+    /*하위 요소 감싸기*/
     display: flex;
-    flex-wrap: wrap;
     overflow: hidden;
-}
-
-.w40p, .w50p, .w60p, .w100p, .w30p {
-    box-sizing: border-box;
-    padding: 20px;
+    flex-wrap: wrap; /* Flex items will wrap onto multiple lines */
 }
 
 .w40p {
@@ -35,21 +32,20 @@
     width: 100%;
 }
 
-.w30p {
-    width: 30%;
-}
-
 .content-paragraph-left {
-    float: left;
+    padding: 20px;
+    /* 높이 최대로 */
 }
 
 .content-paragraph-center {
     margin: 0 auto;
+    padding: 20px;
     box-sizing: border-box;
 }
 
 .content-paragraph-right {
-    float: right;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .content-paragraph img {
@@ -57,6 +53,7 @@
 }
 
 .a1 {
+    /* background with padding */
     background-color: #6ab178;
     padding: 10px;
     border-radius: 30px;
@@ -64,6 +61,7 @@
 }
 
 .a2 {
+    /* background without padding */
     padding: 20px;
     border: 5px solid #6ab178;
     background-color: white;
@@ -73,41 +71,12 @@
 
 /* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
-    .content {
-        padding: 0 30px;
-    }
-    .w40p, .w50p, .w60p, .w30p {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 992px) {
-    .w40p, .w50p, .w60p, .w30p {
+    .w40p, .w50p, .w60p, .w100p {
         width: 100%;
-        padding: 10px;
     }
+
     .content-paragraph img {
         width: 100%;
         height: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul li {
-        margin: 5px 0;
-    }
-}
-
-@media (max-width: 576px) {
-    .content {
-        padding: 0 10px;
-    }
-    .w40p, .w50p, .w60p, .w30p {
-        padding: 5px;
     }
 }
