@@ -1,77 +1,72 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://gamegate256.github.io/mainstyle.css">
-    <link rel="stylesheet" href="https://gamegate256.github.io/basicstyle.css">
-    <title>Website</title>
-</head>
-<body>
-    <header>
-        <h1>대충 식물도감</h1>
-        <nav>
-            <ul>
-                <li><a href="main.html">메인</a></li>
-                <li><a class="non-colorize" href="#">|</a></li>
-                <li><a href="encyclopedia.html">도감</a></li>
-                <li><a class="non-colorize" href="#">|</a></li>
-                <li><a href="about.html">사이트</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="main">
-        <div class="content" style="min-height: 1000px;">
-            <div class="content-paragraph">
-                <div class="content-paragraph-left w60p">
-                    <img src="asset/houseplant_1.jpg" alt="식물사진" style="width: 100%;">
-                </div>
-                <div class="content-paragraph-right w40p">
-                    <div class="a2">
-                        <h2>이름</h2>
-                        <p>설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</p>
-                    </div>
-                </div>
-            </div>
-            <div class="content-paragraph">
-                <div class="content-paragraph-left w100p">
-                    <div class="a2">
-                        <h2>이름</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="content-paragraph">
-                <div class="content-paragraph-left w100p">
-                    <div class="a2">
-                        <h2>이름</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="content-paragraph">
-                <div class="content-paragraph-left w30p">
-                    <img src="asset/temporary_2.png" alt="식물사진" style="width: 100%;">
-                </div>
-                <div class="content-paragraph-center w30p">
-                    <img src="asset/temporary_2.png" alt="식물사진" style="width: 100%;">
-                </div>
-                <div class="content-paragraph-right w30p">
-                    <img src="asset/temporary_2.png" alt="식물사진" style="width: 100%;">
-                </div>
-            </div>
-            <div class="content-paragraph">
-                <div class="content-paragraph-left w50p">
-                    <img src="asset/houseplant_1.jpg" alt="식물사진" style="width: 100%;">
-                </div>
-                <div class="content-paragraph-right w50p">
-                    <img src="asset/houseplant_1.jpg" alt="식물사진" style="width: 100%;">
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p class="team-name">© AI 프로그래밍입문(15291_020) 10조 개 발</p>
-        <p class="team-mate">202423862 허준서</p>
-        <p class="team-mate">202434657 임소연</p>
-    </footer>
-</body>
-</html>
+.content {
+    padding: 0 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.content img {
+    /* 둥글게 */
+    border-radius: 20px
+}
+
+.content-paragraph {
+    /*하위 요소 감싸기*/
+    display: flex;
+    overflow: hidden;
+}
+
+.w40p {
+    width: 40%;
+}
+
+.w50p {
+    width: 50%;
+}
+
+.w60p {
+    width: 60%;
+}
+
+.w100p {
+    width: 100%;
+}
+
+.content-paragraph-left {
+    float: left;
+    padding: 20px;
+    /* 높이 최대로 */
+}
+
+.content-paragraph-center {
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-paragraph-right {
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-paragraph img {
+    height: 100%;
+}
+
+.a1 {
+    /* background with padding */
+    background-color: #6ab178;
+    padding: 10px;
+    border-radius: 30px;
+    height: 100%;
+
+}
+
+.a2 {
+    /* background without padding */
+    padding: 20px;
+    border: 5px solid #6ab178;
+    background-color: white;
+    border-radius: 30px;
+    height: 100%;
+}
