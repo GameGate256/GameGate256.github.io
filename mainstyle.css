@@ -16,6 +16,10 @@
     flex-wrap: wrap; /* Flex items will wrap onto multiple lines */
 }
 
+.w30p {
+    width: 30%;
+}
+
 .w40p {
     width: 40%;
 }
@@ -71,7 +75,7 @@
 
 /* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
-    .w40p, .w50p, .w60p, .w100p {
+    .w30p, .w40p, .w50p, .w60p, .w100p {
         width: 100%;
     }
 
