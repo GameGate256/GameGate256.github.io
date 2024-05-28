@@ -36,9 +36,7 @@ header ul li a:not(.non-colorize):hover {
     cursor: pointer;
 }
 
-.main {
-    background-image: url("asset/bg-blur.png")
-}
+
 
 footer {
     background-color: #2d4131;
