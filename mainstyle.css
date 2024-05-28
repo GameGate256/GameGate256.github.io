@@ -1,0 +1,72 @@
+.content {
+    padding: 0 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.content img {
+    /* 둥글게 */
+    border-radius: 20px
+}
+
+.content-paragraph {
+    /*하위 요소 감싸기*/
+    display: flex;
+    overflow: hidden;
+}
+
+.w40p {
+    width: 40%;
+}
+
+.w50p {
+    width: 50%;
+}
+
+.w60p {
+    width: 60%;
+}
+
+.w100p {
+    width: 100%;
+}
+
+.content-paragraph-left {
+    float: left;
+    padding: 20px;
+    /* 높이 최대로 */
+}
+
+.content-paragraph-center {
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-paragraph-right {
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-paragraph img {
+    height: 100%;
+}
+
+.a1 {
+    /* background with padding */
+    background-color: #6ab178;
+    padding: 10px;
+    border-radius: 30px;
+    height: 100%;
+
+}
+
+.a2 {
+    /* background without padding */
+    padding: 20px;
+    border: 5px solid #6ab178;
+    background-color: white;
+    border-radius: 30px;
+    height: 100%;
+}
