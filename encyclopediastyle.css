@@ -3,17 +3,23 @@
     display: flex;
     padding: 20px;
     align-items: flex-start; /* Align items to the top */
+    justify-content: center; /* Center align the content area */
+    flex-wrap: nowrap; /* Ensure the sidebar and content do not wrap */
+    gap: 20px; /* Add some gap between the sidebar and content */
 }
 
 .sidebar-placeholder {
     flex-shrink: 0;
     width: 20%; /* Ensure the placeholder takes the same width as the sidebar */
+    max-width: 250px; /* Set maximum width for the sidebar */
 }
 
 .sidebar {
     background-color: #f0f0f0;
     padding: 10px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure the sidebar fills the placeholder width */
+    max-width: 250px; /* Set maximum width for the sidebar */
 }
 
 .sidebar h2 {
@@ -47,13 +53,19 @@
 }
 
 .content {
-    width: 80%;
+    flex-grow: 1; /* Ensure the content takes the remaining space */
     padding: 20px;
+    max-width: 800px; /* Maximum width considering the sidebar's max-width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the inner divs */
 }
 
 .content .plant {
     margin-bottom: 40px;
     text-align: center;
+    width: 100%; /* Ensure it takes the full width of the content */
+    max-width: 800px; /* Set a maximum width for better readability */
 }
 
 .content .plant img {
@@ -82,5 +94,10 @@
 
     .content {
         width: 100%; /* Ensure the content takes full width */
+        max-width: 100%; /* Ensure it adjusts to full width */
+    }
+
+    .content .plant {
+        max-width: 100%; /* Ensure it takes full width on small screens */
     }
 }
