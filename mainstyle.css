@@ -84,7 +84,7 @@
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .w30p, .w40p, .w50p, .w60p, .w100p {
         width: 100%;
     }

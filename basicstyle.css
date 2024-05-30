@@ -51,7 +51,7 @@ footer .team-name {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     header ul {
         justify-content: space-around; /* Keep horizontal alignment but adjust spacing */
     }
