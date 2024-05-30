@@ -16,6 +16,10 @@
     flex-wrap: wrap; /* Flex items will wrap onto multiple lines */
 }
 
+.text-centerize {
+    text-align: center;
+}
+
 .w30p {
     width: 30%;
 }
@@ -34,6 +38,12 @@
 
 .w100p {
     width: 100%;
+}
+
+.goto:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: none;
 }
 
 .content-paragraph-left {

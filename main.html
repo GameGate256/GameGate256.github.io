@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainstyle.css">
     <link rel="stylesheet" href="basicstyle.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const countdownElement = document.querySelector('h2.daycountdown');
+
+            function updateCountdown() {
+                const today = new Date();
+                const year = today.getMonth() > 3 || (today.getMonth() === 3 && today.getDate() > 5) ? today.getFullYear() + 1 : today.getFullYear();
+                const targetDate = new Date(year, 3, 5); // 4월 5일
+                const timeDifference = targetDate - today;
+                const daysLeft = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+
+                countdownElement.textContent = `식목일 D-${daysLeft}`;
+            }
+
+            updateCountdown();
+        });
+    </script>
     <title>Website</title>
 </head>
 <body>
@@ -27,20 +44,23 @@
                     <img src="asset/houseplant_1.jpg" alt="식물사진" style="width: 100%;">
                 </div>
                 <div class="content-paragraph-right w40p">
-                    <div class="a2">
-                        <h2>이름</h2>
-                        <p>설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</p>
+                    <div class="a2 text-centerize">
+                        <h2>오늘의 식물</h2>
                     </div>
                 </div>
             </div>
             <div class="content-paragraph">
                 <div class="content-paragraph-left w100p">
-                    <img src="asset/temporary_1.png" alt="식물사진" style="width: 100%;">
+                    <div class="a2 text-centerize">
+                        <h2 class="goto">>> 요즘 인기있는 식물 보러가기 <<</h2>
+                    </div>
                 </div>
             </div>
             <div class="content-paragraph">
                 <div class="content-paragraph-left w100p">
-                    <img src="asset/temporary_1.png" alt="식물사진" style="width: 100%;">
+                    <div class="a2 text-centerize">
+                        <h2 class="daycountdown">식목일 D-</h2>
+                    </div>
                 </div>
             </div>
             <div class="content-paragraph">
