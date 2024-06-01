@@ -152,6 +152,10 @@
                 }
             });
 
+            // 처음 링크타도 들어왔을 때 사이드바 위치 조정
+            window.dispatchEvent(new Event('scroll'));
+            
+
             // Add event listeners for toggle buttons
             var toggleButtons = document.querySelectorAll('.toggle-button');
 
