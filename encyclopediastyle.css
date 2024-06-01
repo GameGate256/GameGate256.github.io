@@ -62,7 +62,7 @@
 }
 
 .content .plant {
-    margin-bottom: 40px;
+    margin-bottom: 200px;
     text-align: center;
     width: 100%; /* Ensure it takes the full width of the content */
     max-width: 800px; /* Set a maximum width for better readability */
@@ -76,13 +76,19 @@
 }
 
 .content .plant h3 {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     font-size: 24px;
+}
+
+.content .plant h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .content .plant p {
     font-size: 18px;
     line-height: 1.6;
+    text-align: left;
 }
 
 /* Media query to hide the sidebar on small screens */
