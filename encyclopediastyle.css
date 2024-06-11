@@ -9,6 +9,7 @@
 }
 
 .sidebar-placeholder {
+    margin-top: 20px;
     flex-shrink: 0;
     width: 20%; /* Ensure the placeholder takes the same width as the sidebar */
     max-width: 250px; /* Set maximum width for the sidebar */

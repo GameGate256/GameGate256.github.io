@@ -7,7 +7,6 @@
 header {
     background-color: #2d4131;
     color: white;
-    padding: 1rem;
     text-align: center;
     user-select: none;
 }
@@ -16,7 +15,6 @@ header ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 30px 0 0 0;
     flex-wrap: wrap; /* Flex items will wrap onto multiple lines */
 }
 
@@ -35,6 +33,30 @@ header ul li a {
 header ul li a:not(.non-colorize):hover {
     color: #adffab;
     cursor: pointer;
+}
+
+.header-center-container {
+    padding: 1rem;
+}
+
+.navbar {
+    user-select: none;
+    background-color: #2d4131;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sticky + .container {
+    margin-top: 80px; /* Adjust this value based on navbar height */
 }
 
 .font-pron {
